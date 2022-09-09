@@ -1,0 +1,99 @@
+{
+    "fighters": [
+      {
+        "id": 1,
+        "name": "Shaggy",
+        "image": "https://cdn.multiversus.com/roster/shaggy-t.webp"
+      },
+      {
+        "id": 2,
+        "name": "Batman",
+        "image": "https://cdn.multiversus.com/roster/batman-t.webp"
+      },
+      {
+        "id": 3,
+        "name": "Taz",
+        "image": "https://cdn.multiversus.com/roster/taz-t.webp"
+      },
+      {
+        "id": 4,
+        "name": "Garnet",
+        "image": "https://cdn.multiversus.com/roster/garnet-t.webp"
+      },
+      {
+        "id": 5,
+        "name": "Jake",
+        "image": "https://cdn.multiversus.com/roster/jake-t.webp"
+      },
+      {
+        "id": 6,
+        "name": "Finn",
+        "image": "https://cdn.multiversus.com/roster/finn-t.webp"
+      },
+      {
+        "id": 7,
+        "name": "Arya Start",
+        "image": "https://cdn.multiversus.com/roster/arya-t.webp"
+      },
+      {
+        "id": 8,
+        "name": "Harley Quinn",
+        "image": "https://cdn.multiversus.com/roster/harley-t.webp"
+      },
+      {
+        "id": 9,
+        "name": "Lebron James",
+        "image": "https://cdn.multiversus.com/roster/lebron-t.webp"
+      },
+      {
+        "id": 10,
+        "name": "Gizmo",
+        "image": "https://cdn.multiversus.com/roster/gizmo-t.webp"
+      },
+      {
+        "id": 11,
+        "name": "Wonder Woman",
+        "image": "https://cdn.multiversus.com/roster/wonder-woman-t.webp"
+      },
+      {
+        "id": 12,
+        "name": "Superman",
+        "image": "https://cdn.multiversus.com/roster/superman-t.webp"
+      },
+      {
+        "id": 13,
+        "name": "Iron Giant",
+        "image": "https://cdn.multiversus.com/roster/iron-giant-t.webp"
+      },
+      {
+        "id": 14,
+        "name": "Steven Universe",
+        "image": "https://cdn.multiversus.com/roster/steven-universe-t.webp"
+      },
+      {
+        "id": 15,
+        "name": "Reindog",
+        "image": "https://cdn.multiversus.com/roster/reindog-t.webp"
+      },
+      {
+        "id": 16,
+        "name": "Velma",
+        "image": "https://cdn.multiversus.com/roster/velma-t.webp"
+      },
+      {
+        "id": 17,
+        "name": "Bugs Bunny",
+        "image": "https://cdn.multiversus.com/roster/bugs-t.webp"
+      },
+      {
+        "id": 18,
+        "name": "Tom and Jerry",
+        "image": "https://cdn.multiversus.com/roster/tom-and-jerry-t.webp"
+      },
+      {
+        "id": 19,
+        "name": "Morty",
+        "image": "https://cdn.multiversus.com/roster/morty-t.webp"
+      }
+    ]
+  }
