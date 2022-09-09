@@ -19,3 +19,4 @@
 * DOMContentLoaded event listener
 * Click event listener on random button to return a character from db.json, character is then removed from pool of randomizer and pictures
 * Click event listener reset button for when player loses and needs to restart challenge.  Character portraits are returned to the pool for randomizer and pictures
+* Change event listener on dropdown menu for switch from light to dark mode
