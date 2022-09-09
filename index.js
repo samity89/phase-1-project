@@ -11,3 +11,13 @@ Event listener on a randomize button (click) to return a random character name, 
 Event listener on a reset button (click) that restores all characters to the pool
 Event listener of dropdown menu (change) that changes page from light to dark mode
 */
+
+let fighterArray = []
+
+document.addEventListener("DOMContentLoaded", (grabFighters))
+
+function grabFighters() {
+    fetch("http://localhost:3000/fighters")
+    .then(response => response.json())
+    .then(response => console.log(response, "response"))
+}
