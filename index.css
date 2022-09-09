@@ -1,0 +1,22 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+}
+
+img {
+    border: 2px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    width: 150px;
+    background-color: lightgray;
+}
+
+.card {
+    text-align: center;
+    display: inline-grid;
+    margin: 3px;
+}
+
+h2 {
+    font-size: medium;
+}
