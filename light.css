@@ -1,13 +1,13 @@
 html {
     font-family: 'Courier New', Courier, monospace;
-    align-items: center;
+    text-align: center;
 }
 
 img {
     border: 2px solid black;
     border-radius: 3px;
     padding: 5px;
-    width: 150px;
+    width: 125px;
     background-color: lightgray;
 }
 
@@ -19,4 +19,12 @@ img {
 
 h2 {
     font-size: medium;
+}
+
+button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+select {
+    font-family: 'Courier New', Courier, monospace;
 }

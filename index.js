@@ -1,19 +1,21 @@
 let fighterArray = []
-console.log(fighterArray);
+
 document.addEventListener("DOMContentLoaded", () => {
     alert("RNGesus will... CHOOSE YOUR FIGHTER!!")
     grabFighters()
     addFightersToArray()
+    
     document.querySelector("#reset").addEventListener("click", () => {
         document.getElementById("character-select").innerHTML = "";
         fighterArray.length = 0
         grabFighters()
         addFightersToArray()
     })
+    
     document.querySelector("#randomize").addEventListener("click", () => {
-        randomFighter()
-        console.log("random")
+        removeRandom(fighterArray)
     })
+    
     document.getElementById("theme-dropdown").addEventListener("change", (e) => {
         if (e.target.value === "dark") {
             document.querySelector("link[href='light.css']").href = "dark.css";
@@ -35,11 +37,11 @@ function grabFighters() {
 function addFightersToArray() {
     fetch("http://localhost:3000/fighters")
     .then(response => response.json())
-    .then(data => data.forEach(fighter => fighterArray.push(fighter.id)))
+    .then(data => data.forEach(fighter => fighterArray.push(fighter.name)))
 }; 
 
 function showFighters(fighter) {
-    const fighterContainer = document.getElementById("character-select");
+    let fighterContainer = document.getElementById("character-select");
     const div = document.createElement("div");
     div.classList.add("card");
     const h2 = document.createElement("h2");
@@ -50,14 +52,21 @@ function showFighters(fighter) {
     fighterContainer.append(div);
 };
 
-// function randomFighterInt(min, max) {
-//     min = Math.ceil(1);
-//     max = Math.floor(19);
-//     return Math.floor(Math.random() * (19 - 1 + 1)) + 1;
-// }
-
-// function randomFighter() {
-//     var chosenFighter = fighterArray.random()
-//     fighterArray.remove(chosenFighter)
-//     console.log(fighterArray)
-// }
+const removeRandom = (array) => {
+    const div = document.createElement("div")
+    const h3 = document.createElement("h3")
+    const selectedContainer = document.getElementById("selected-character")
+    selectedContainer.innerHTML = ""
+    if (array.length > 0) {
+        const random = Math.floor(Math.random() * array.length);
+        const chosenFighter = array.splice(random, 1)[0];
+        console.log(chosenFighter);
+        console.log(fighterArray);
+        h3.innerText = chosenFighter
+        div.append(h3)
+        selectedContainer.append(div)
+    }
+    else {
+        alert("Congratulations!  You did it!")
+    }
+}
