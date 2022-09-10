@@ -46,6 +46,7 @@ function showFighters(fighter) {
     div.classList.add("card");
     const h2 = document.createElement("h2");
     h2.textContent = fighter.name;
+    h2.id = fighter.name;
     const img = document.createElement("img")
     img.src = fighter.image;
     div.append(h2, img);
@@ -60,11 +61,13 @@ const removeRandom = (array) => {
     if (array.length > 0) {
         const random = Math.floor(Math.random() * array.length);
         const chosenFighter = array.splice(random, 1)[0];
-        console.log(chosenFighter);
-        console.log(fighterArray);
         h3.innerText = chosenFighter
         div.append(h3)
         selectedContainer.append(div)
+        console.log(chosenFighter)
+        if (!!document.querySelector(`#${chosenFighter}`)) {
+            document.querySelector(`#${chosenFighter}`).parentElement.remove()
+        }
     }
     else {
         alert("Congratulations!  You did it!")
