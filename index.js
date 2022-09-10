@@ -11,28 +11,43 @@ Event listener on a randomize button (click) to return a random character name, 
 Event listener on a reset button (click) that restores all characters to the pool
 Event listener of dropdown menu (change) that changes page from light to dark mode
 */
-
 let fighterArray = []
-const resetButton = document.getElementById("reset")
-const randomButton = document.getElementById("randomize")
-const dropdownThemes = document.getElementById("theme-dropdown")
 
-document.addEventListener("DOMContentLoaded", (grabFighters))
+document.addEventListener("DOMContentLoaded", () => {
+    grabFighters()
+    document.querySelector("#reset").addEventListener("click", () => {
+        document.getElementById("character-select").innerHTML = "";
+        grabFighters();
+    })
+    document.querySelector("#randomize").addEventListener("click", () => {
+
+    })
+    const dropdownThemes = document.getElementById("theme-dropdown");
+    }    
+);
 
 function grabFighters() {
     fetch("http://localhost:3000/fighters")
     .then(response => response.json())
     .then(data => data.forEach(fighter => showFighters(fighter)))
-}
+};
 
 function showFighters(fighter) {
-    const fighterContainer = document.getElementById("character-select")
-    const div = document.createElement("div")
-    div.classList.add("card")
-    const h2 = document.createElement("h2")
-    h2.textContent = fighter.name
+    const fighterContainer = document.getElementById("character-select");
+    const div = document.createElement("div");
+    div.classList.add("card");
+    const h2 = document.createElement("h2");
+    h2.textContent = fighter.name;
     const img = document.createElement("img")
-    img.src = fighter.image
-    div.append(h2, img)
-    fighterContainer.append(div)
-}
+    img.src = fighter.image;
+    div.append(h2, img);
+    fighterContainer.append(div);
+};
+
+// randomButton.addEventListener("click", () => {
+//     console.log("ugh")
+// });
+
+// dropdownThemes.addEventListener("change", () => {
+//     console.log("change")
+// });
