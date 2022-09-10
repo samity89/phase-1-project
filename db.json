@@ -32,17 +32,17 @@
       },
       {
         "id": 7,
-        "name": "Arya Stark",
+        "name": "Arya_Stark",
         "image": "https://cdn.multiversus.com/roster/arya-t.webp"
       },
       {
         "id": 8,
-        "name": "Harley Quinn",
+        "name": "Harley_Quinn",
         "image": "https://cdn.multiversus.com/roster/harley-t.webp"
       },
       {
         "id": 9,
-        "name": "Lebron James",
+        "name": "Lebron_James",
         "image": "https://cdn.multiversus.com/roster/lebron-t.webp"
       },
       {
@@ -52,7 +52,7 @@
       },
       {
         "id": 11,
-        "name": "Wonder Woman",
+        "name": "Wonder_Woman",
         "image": "https://cdn.multiversus.com/roster/wonder-woman-t.webp"
       },
       {
@@ -62,12 +62,12 @@
       },
       {
         "id": 13,
-        "name": "Iron Giant",
+        "name": "Iron_Giant",
         "image": "https://cdn.multiversus.com/roster/iron-giant-t.webp"
       },
       {
         "id": 14,
-        "name": "Steven Universe",
+        "name": "Steven_Universe",
         "image": "https://cdn.multiversus.com/roster/steven-t.webp"
       },
       {
@@ -82,12 +82,12 @@
       },
       {
         "id": 17,
-        "name": "Bugs Bunny",
+        "name": "Bugs_Bunny",
         "image": "https://cdn.multiversus.com/roster/bugs-t.webp"
       },
       {
         "id": 18,
-        "name": "Tom and Jerry",
+        "name": "Tom_and_Jerry",
         "image": "https://cdn.multiversus.com/roster/tom-and-jerry-t.webp"
       },
       {
