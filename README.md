@@ -18,4 +18,5 @@
 * Play a game of Multiversus
 * If you win, choose the next character by pressing "pick random" again.  Repeating until the challenge is complete.
 * If you lose, click the "reset" button to restore all of the characters to the pool.  Click "pick random" again to start a new challenge.
+* Toggle between light or dark themes using the dropdown menu at the bottom of the page
 * Good luck!!
