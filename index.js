@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
     alert("RNGesus will... CHOOSE YOUR FIGHTER!!")
     grabFighters()
     addFightersToArray()
-    
     document.querySelector("#reset").addEventListener("click", () => {
         document.getElementById("character-select").innerHTML = "";
         fighterArray.length = 0
         grabFighters()
         addFightersToArray()
+        document.getElementById("selected-character").innerHTML = ""
     })
     
     document.querySelector("#randomize").addEventListener("click", () => {
@@ -54,19 +54,17 @@ function showFighters(fighter) {
 };
 
 const removeRandom = (array) => {
-    const div = document.createElement("div")
-    const h3 = document.createElement("h3")
     const selectedContainer = document.getElementById("selected-character")
     selectedContainer.innerHTML = ""
     if (array.length > 0) {
         const random = Math.floor(Math.random() * array.length);
         const chosenFighter = array.splice(random, 1)[0];
-        h3.innerText = chosenFighter
-        div.append(h3)
-        selectedContainer.append(div)
-        console.log(chosenFighter)
-        if (!!document.querySelector(`#${chosenFighter}`)) {
-            document.querySelector(`#${chosenFighter}`).parentElement.remove()
+        const allCards = document.querySelectorAll('.card');
+        for (const card of allCards) {
+            if (card.querySelector("h2").innerText === chosenFighter) {
+                card.remove();
+                selectedContainer.append(card);
+            }
         }
     }
     else {
